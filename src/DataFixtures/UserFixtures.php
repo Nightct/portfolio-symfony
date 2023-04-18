@@ -21,7 +21,8 @@ class UserFixtures extends Fixture
         // $product = new Product();
         // $manager->persist($product);
         $user = new User();
-        $user->setEmail("loic@gmail.com");
+        $user->setEmail("admin@gmail.com");
+        $user->setRoles(["ROLE_ADMIN"]);
 
         $plainPassword = "1234";
         // hash the password (based on the security.yaml config for the $user class)

@@ -162,19 +162,47 @@ header .scroll-bar {
     padding-bottom: 1rem;
 }
 
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .row .title {
+    font-size: 3rem;
+    color: var(--blue);
+    padding: .5rem 0;
+}
+
+.about .row .progress-bar {
+    flex: 1 1 40rem;
+    padding: 1rem;
+}
+
+.about .row .progress-bar .progress {
+    padding: 1rem 0;
+}
+
+.about .row .progress-bar .progress h3 {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 2rem;
+}
+
+.about .row .progress-bar .progress .bar {
+    height: 1rem;
+    width: 100%;
+    border: .2rem solid var(--blue);
+}
+
+.about .row .personal-info {
+    flex: 1 1 55rem;
+    padding: 1rem;
+}
 
 
 
 
-
-
-
-
-
-
-/* body {
-    height: 300rem;
-} */
 
 
 

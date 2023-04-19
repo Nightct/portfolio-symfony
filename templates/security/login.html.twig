@@ -3,6 +3,8 @@
 {% block title %}Log in!{% endblock %}
 
 {% block body %}
+<div style="height: 200px;"></div> <!-- Ajout d'une balise <div> pour créer un espace au-dessus du formulaire -->
+
 <form method="post">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>

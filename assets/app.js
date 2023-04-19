@@ -32,3 +32,19 @@ function scrollIndicator() {
     let percentage = ((window.scrollY) / maxHeight) * 100;
     scrollBar.style.width = percentage + '%';
 }
+
+
+// Récupérer tous les éléments span qui contiennent le pourcentage de compétence
+var spans = document.querySelectorAll('.progress-bar .progress h3 span');
+
+// Parcourir tous les éléments span
+for (var i = 0; i < spans.length; i++) {
+    // Récupérer la valeur de pourcentage
+    var percentage = parseInt(spans[i].textContent);
+
+    // Récupérer la barre de progression correspondante
+    var bar = spans[i].parentNode.nextElementSibling.firstElementChild;
+
+    // Définir la largeur de la barre de progression
+    bar.style.width = percentage + '%';
+}

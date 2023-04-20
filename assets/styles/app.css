@@ -204,6 +204,7 @@ header .scroll-bar {
     height: 100%;
 }
 
+/* Remplacé par du JS */
 /* .about .row .progress-bar .progress:nth-child(2) .bar span {
     width: 95%;
 } */
@@ -212,6 +213,159 @@ header .scroll-bar {
     flex: 1 1 55rem;
     padding: 1rem;
 }
+
+.about .row .personal-info .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about .row .personal-info .box-container .box {
+    padding: 1rem;
+}
+
+.about .row .personal-info .box-container .box h3 {
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.about .row .personal-info .box-container .box h3 span {
+    color: #999;
+    font-size: 1.7rem;
+}
+
+.about .counter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .counter .box {
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    flex: 1 1 20rem;
+}
+
+.about .counter .box h3 {
+    font-size: 4rem;
+    color: var(--blue);
+}
+
+.about .counter .box p {
+    font-size: 2rem;
+    color: #666;
+    padding: .5rem 0;
+}
+
+.service {
+    background: #f9f9f9;
+}
+
+.service .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box {
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 2.5rem;
+    background: linear-gradient(79deg, rgba(52, 152, 219, .2) 50%, #fff 50.1%);
+    position: relative;
+    z-index: 0;
+    flex: 1 1 30rem;
+}
+
+.service .box-container .box .number {
+    font-size: 7rem;
+    color: rgba(0, 0, 0, .05);
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    z-index: -1;
+    font-weight: bolder;
+}
+
+.service .box-container .box:hover .number {
+    font-size: 9rem;
+}
+
+.service .box-container .box h3 {
+    font-size: 2.4rem;
+    color: #333;
+}
+
+.service .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.education .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education .row .column {
+    flex: 1 1 40rem;
+    margin: 1rem;
+    padding: 2rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.education .row .column .title {
+    color: var(--blue);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.education .row .column .box {
+    padding-left: 2.5rem;
+    padding-bottom: 2rem;
+    border-left: .2rem solid var(--blue);
+    position: relative;
+}
+
+.education .row .column .box::before {
+    content: '';
+    position: absolute;
+    top: .1rem;
+    left: -1.1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--blue);
+}
+
+.education .row .column .box .year {
+    font-size: 1.5rem;
+    color: #999;
+    padding-bottom: .5rem;
+}
+
+.education .row .column .box .year i {
+    padding-right: .5rem;
+}
+
+.education .row .column .box h3 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.education .row .column .box p {
+    color: #666;
+    font-size: 1.5rem;
+    padding-top: .5rem;
+}
+
 
 
 
@@ -296,6 +450,10 @@ header .scroll-bar {
 
     html {
         font-size: 50%;
+    }
+
+    .heading {
+        font-size: 4.5rem;
     }
 
     header .navbar {

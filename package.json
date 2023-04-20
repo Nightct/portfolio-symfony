@@ -14,8 +14,9 @@
     "license": "UNLICENSED",
     "private": true,
     "scripts": {
-        "server-start": "./start.bat",
-        "server-stop": "./stop.bat",
+        "start-server": "./start-server.bat",
+        "compile-assets": "./compile-assets.bat",
+        "stop-server": "./stop-server.bat",
         "dev-server": "encore dev-server",
         "dev": "encore dev",
         "watch": "encore dev --watch",

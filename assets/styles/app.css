@@ -366,9 +366,52 @@ header .scroll-bar {
     padding-top: .5rem;
 }
 
+.portfolio {
+    background: #f9f9f9;
+}
 
+.portfolio .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.portfolio .box-container .box {
+    margin: 1rem;
+    height: 25rem;
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+    position: relative;
+}
 
+.portfolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box .info {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: rgba(52, 152, 219, .8);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+.portfolio .box-container .box:hover .info {
+    top: 0;
+}
 
 
 

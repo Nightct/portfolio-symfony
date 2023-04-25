@@ -413,6 +413,17 @@ header .scroll-bar {
     top: 0;
 }
 
+.portfolio .box-container .box:hover img {
+    transform: scale(1.2);
+}
+
+.contact .row {
+    display: flex;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .2);
+}
 
 
 

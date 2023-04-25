@@ -425,6 +425,68 @@ header .scroll-bar {
     border: .1rem solid rgba(0, 0, 0, .2);
 }
 
+.contact .row form {
+    padding: 2rem;
+    flex: 1 1 40rem;
+}
+
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form .inputBox {
+    position: relative;
+}
+
+.contact .row form .inputBox input,
+.contact .row form .inputBox textarea {
+    width: 100%;
+    padding: .5rem 1rem;
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    color: #333;
+    border: .1rem solid green;
+    text-transform: none;
+    resize: none;
+}
+
+.contact .row form .inputBox label {
+    position: absolute;
+    top: 2.1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.contact .row form .inputBox input:invalid,
+.contact .row form .inputBox textarea:invalid {
+    border-color: rgba(0, 0, 0, .1);
+}
+
+.contact .row form .inputBox input:valid~label,
+.contact .row form .inputBox textarea:valid~label,
+.contact .row form .inputBox input:focus~label,
+.contact .row form .inputBox textarea:focus~label {
+    top: -.6rem;
+    left: 0;
+    color: var(--blue);
+    font-size: 1.3rem;
+}
+
+.contact .row form .btn:hover {
+    background: var(--blue);
+    cursor: pointer;
+}
+
+
+
+
 
 
 

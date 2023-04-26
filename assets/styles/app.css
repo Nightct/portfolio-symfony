@@ -484,6 +484,21 @@ header .scroll-bar {
     cursor: pointer;
 }
 
+.footer {
+    background: #f9f9f9;
+    color: #333;
+    font-size: 2rem;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--blue);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -558,6 +573,10 @@ header .scroll-bar {
 
     .home .content .name {
         font-size: 3.5rem;
+    }
+
+    .contact .row .image {
+        display: none;
     }
 
 }
